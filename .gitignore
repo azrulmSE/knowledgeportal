@@ -6,4 +6,4 @@ test/unit/coverage
 test/e2e/reports
 selenium-debug.log
 www/
-platforms/
+platforms/android/build/outputs/apk/android-debug.apk
