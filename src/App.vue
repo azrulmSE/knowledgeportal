@@ -1,5 +1,5 @@
 <template>
-  <v-app id="inspire">
+  <v-app id="app">
     <v-navigation-drawer
       fixed
       clipped
@@ -10,7 +10,7 @@
     <v-list>
         <v-list-tile>
           <v-list-tile-title class="title">
-            Application
+            Knowledge Portal Links
           </v-list-tile-title>
         </v-list-tile>
       </v-list>
@@ -22,9 +22,12 @@
           </v-list-tile-action>
           <v-list-tile-content>
             <v-list-tile-title>
-              <router-link to="/" >Active: Home</router-link>
+              <router-link to="/" >Home</router-link>
             </v-list-tile-title>
           </v-list-tile-content>
+          <!-- <v-list-tile-action>
+            <v-icon>keyboard_arrow_right</v-icon>
+          </v-list-tile-action> -->
         </v-list-tile>
         <v-list-tile>
           <v-list-tile-action>
@@ -32,9 +35,12 @@
           </v-list-tile-action>
           <v-list-tile-content>
             <v-list-tile-title>
-              <router-link to="employeeproposition" >Employee Valuee Proposition</router-link>
+              <router-link to="employeeproposition" >Employee Value Proposition</router-link>
             </v-list-tile-title>
           </v-list-tile-content>
+          <!-- <v-list-tile-action>
+            <v-icon>keyboard_arrow_right</v-icon>
+          </v-list-tile-action> -->
         </v-list-tile>
          <v-list-tile>
           <v-list-tile-action>
@@ -45,6 +51,9 @@
               <router-link to="codeethics" >Code of Ethics</router-link>
             </v-list-tile-title>
           </v-list-tile-content>
+          <!-- <v-list-tile-action>
+            <v-icon>keyboard_arrow_right</v-icon>
+          </v-list-tile-action> -->
         </v-list-tile>
          <v-list-tile>
           <v-list-tile-action>
@@ -55,6 +64,9 @@
                <router-link to="contact" active>Contact</router-link>
             </v-list-tile-title>
           </v-list-tile-content>
+          <!-- <v-list-tile-action>
+            <v-icon>keyboard_arrow_right</v-icon>
+          </v-list-tile-action> -->
         </v-list-tile>
          <v-list-tile>
           <v-list-tile-action>
@@ -65,19 +77,24 @@
               <router-link to="signin" active>Sign In</router-link>
             </v-list-tile-title>
           </v-list-tile-content>
+          <!-- <v-list-tile-action>
+            <v-icon>keyboard_arrow_right</v-icon>
+          </v-list-tile-action> -->
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
     <v-toolbar color="indigo" dark fixed app>
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-      <v-toolbar-title row align-center>Application</v-toolbar-title>
+      <v-toolbar-title row justify-center >Knowledge Portal</v-toolbar-title>
     </v-toolbar>
     <v-content>
       <v-container fluid fill-height>
         <v-layout
           justify-center
         >
+        <v-fade-transition mode="out-in">
           <router-view></router-view>
+        </v-fade-transition>
         </v-layout>
       </v-container>
     </v-content>
@@ -90,7 +107,7 @@
 <script>
   export default {
     data: () => ({
-      drawer: false
+      drawer: null
     }),
     props: {
       source: String

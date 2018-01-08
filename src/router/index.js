@@ -12,8 +12,13 @@ export default new Router({
     mode: 'history',
     routes:[{
         name: 'main',
-        path: '/',
+        path: '',
         component: Main
+      },
+      { 
+        path: '*', 
+        redirect: '/',
+        component: Main 
       },
       {
         name: 'event',
