@@ -1,7 +1,9 @@
 <template>
-  <v-layout>
-      Contact
-  </v-layout>
+  <div>
+    <v-layout>
+      
+    </v-layout>
+  </div>
 </template>
 
 <script>

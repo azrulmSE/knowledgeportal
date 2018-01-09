@@ -9,7 +9,7 @@ import Contact from '../components/Contact'
 
 Vue.use(Router)
 export default new Router({
-    mode: 'history',
+    mode: 'hash',
     routes:[{
         name: 'main',
         path: '',
