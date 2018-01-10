@@ -2,22 +2,23 @@
     <div>
     <v-container fluid grid-list-md>
     <v-layout row wrap justify-space-around>
-      <v-flex d-flex xs12 sm10 md11>
-        <v-card color="green lighten-2" dark>
+      <v-flex xs12 sm10 md11>
+        <v-card>
           <v-card-title dark>
               EMPLOYEE VALUE PROPOSITION
           </v-card-title>
           <v-card-text style="text-align:justify;">
-              One of our efforts to make Bank Islam a distinctive workplace of choice is through strengthening our core brand values.
-              In doing so, we have established our Employee Value Proposition (EVP), which is a unique set of offerings that Bank Islam articulates to positively
+              One of our efforts to make Celex a distinctive workplace of choice is through strengthening our core brand values.
+              In doing so, we have established our Employee Value Proposition (EVP), which is a unique set of offerings that Celex articulates to positively
               influence the most suitables talents and the internal target groups. EVP is what we actually offer, which is a contrary to what we aspire or created
               to offer.
           </v-card-text>
         </v-card>
       </v-flex>
     </v-layout>
+
     <v-layout justify-center wrap>
-      <v-flex  d-flex xs12 sm5 md6>
+      <v-flex xs12 sm5 md6>
       <v-card color="blue lighten-2">
         <v-card-actions>
           <v-card-title>
@@ -31,7 +32,7 @@
         <v-slide-y-transition>
           <v-card-text v-show="show1" style="text-align:justify;">
             <v-divider></v-divider>
-           &emsp;&emsp;Working with Bank Islam means working with the best minds in the industry. We are the pioneer and acknowledged 
+           &emsp;&emsp;Working with Celex means working with the best minds in the industry. We are the pioneer and acknowledged 
                 leader of Islamic finance which continue to meet the needs for Shariah compliant financial solutions. It provides great opportunities for ideas sharing
                 and knowledge development.
           </v-card-text>
@@ -94,7 +95,7 @@
         </v-card-actions>
         <v-slide-y-transition>
           <v-card-text v-show="show4" style="text-align:justify;">
-           &emsp;&emsp;At Bank Islam, we believe in living the universally accepted good values. You will discover a workplace that thrives on professionalism,
+           &emsp;&emsp;At Celex, we believe in living the universally accepted good values. You will discover a workplace that thrives on professionalism,
                 integrity, mutual respect and care for each other. We also believe in being inclusive in propagating and practicing these goods values. 
           </v-card-text>
         </v-slide-y-transition>

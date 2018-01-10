@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.sage.knowledgeportal" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Vuetify</name>
+    <name>Knowledge Portal</name>
     <description>
         A Vue.js project
     </description>
@@ -17,6 +17,13 @@
     <allow-intent href="geo:*" />
     <platform name="android">
         <allow-intent href="market:*" />
+        <preference name="SplashScreen" value="screen" />
+        <preference name="SplashScreenDelay" value="3000" />
+        <preference name="SplashMaintainAspectRatio" value="true" />
+        <preference name="SplashShowOnlyFirstTime" value="false" />
+        <preference name="SplashScreenSpinnerColor" value="white" />
+        <preference name="AutoHideSplashScreen" value="true" />
+        <preference name="FadeSplashScreenDuration" value="750" />
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
@@ -24,4 +31,5 @@
     </platform>
     <engine name="android" spec="^6.3.0" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
+    <plugin name="cordova-plugin-splashscreen" spec="^5.0.1" />
 </widget>

@@ -1,10 +1,11 @@
 <template>
-  <div>
-    <v-layout>
-    <v-flex xs10 offset-xs1>
+  <!-- <div> -->
+    <v-layout justify-center>
+    <!-- <v-flex xs10 offset-xs1> -->
+    <v-flex xs12 sm10 md10>
       <v-card>
         <v-card-media 
-        :src="getImgUrl('bank_islam.jpg')" 
+        :src="getImgUrl('incubator_pic.jpg')" 
         height="200px">
         </v-card-media>
         <!-- <v-parallax 
@@ -12,17 +13,17 @@
         ></v-parallax> -->
         <v-card-title primary-title>
           <div>
-            <h3 class="headline mb-0">Bank Islam</h3>
-            <div style="text-align:justify">&emsp;&emsp;Bank Islam is the first Shariah based banking institution in Malaysia and South East Asia; and has been playing the leading role in the development of the nation’s Islamic banking industry. In fact, it has provided technical
+            <h3 class="headline mb-0">Celex</h3>
+            <div style="text-align:justify">&emsp;&emsp;Celex is the first Shariah based banking institution in Malaysia and South East Asia; and has been playing the leading role in the development of the nation’s Islamic banking industry. In fact, it has provided technical
                             assistance in the setting up of several Islamic institutions in the Asian region such as Indonesia, Thailand and Sri Lanka. Incorporated in 1983, it was originally established with the sole purpose of assisting with the financial
-                            needs of the Muslim population of Malaysia. Since then, Bank Islam has extended its services to the wider, non-Muslim, population fulfilling its “Banking-for-All” principle.
+                            needs of the Muslim population of Malaysia. Since then, Celex has extended its services to the wider, non-Muslim, population fulfilling its “Banking-for-All” principle.
             </div>
           </div>
         </v-card-title>
       </v-card>
     </v-flex>
   </v-layout>
-  </div>
+  <!-- </div> -->
 </template>
 
 <script>
@@ -34,7 +35,6 @@ export default {
     },
     methods: {
         getImgUrl (img) {
-            // return require('../assets/img/' + img)
             return require('./../../static/img/' + img)
         }
     }

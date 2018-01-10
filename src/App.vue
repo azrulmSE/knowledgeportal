@@ -67,7 +67,7 @@
           <!-- <v-list-tile-action>
             <v-icon>keyboard_arrow_right</v-icon>
           </v-list-tile-action> -->
-        </v-list-tile>
+        <!-- </v-list-tile>
          <v-list-tile>
           <v-list-tile-action>
             <v-icon>input</v-icon>
@@ -76,7 +76,7 @@
             <v-list-tile-title>
               <router-link to="signin" active>Sign In</router-link>
             </v-list-tile-title>
-          </v-list-tile-content>
+          </v-list-tile-content> -->
           <!-- <v-list-tile-action>
             <v-icon>keyboard_arrow_right</v-icon>
           </v-list-tile-action> -->
